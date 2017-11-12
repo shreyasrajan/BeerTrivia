@@ -38,7 +38,6 @@
 }
 .home h2.pageHeader {
   color: teal;
-  text-decoration: underline;
 }
 .home h4.pageDesc {
   color: brown;
@@ -59,11 +58,12 @@
   color: white;
 }
 .home table.beers tr.tableRow:nth-child(even) {
-  background-color: #e2e6ed;
+  background-color: #eeeef9;
 }
 .home table.beers tr.tableRow:hover {
   cursor: pointer;
-  color: navy;
+  color: white;
+  background-color: #739ada;
 }
 .home table.beers th,
 .home table.beers td {
