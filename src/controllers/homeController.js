@@ -92,7 +92,7 @@ function HomeController($scope, $state, $stateParams, ApiService) {
                     var dateA = parseDate(beerA.firstBrewed);
                     var dateB = parseDate(beerB.firstBrewed);
                     return dateA - dateB;
-                case 8:
+                case 7:
                     condLess = beerA.brewersTips < beerB.brewersTips;
                     condGreater = beerA.brewersTips > beerB.brewersTips;
                     break;
