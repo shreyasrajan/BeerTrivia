@@ -1,0 +1,48 @@
+div.detail{
+    div.left{
+        width: 75%;
+        float:left;
+
+        table.tblDetail{
+            width: 100%;
+            border: 2px solid @borderColor;
+            font-size: 12px;
+            border-radius: 10px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background: linear-gradient(#aec0e0, #c8d1e1, #d2d2d3);
+            table-layout: fixed;
+            
+            td{
+                padding: 10px;
+
+                &.descriptor{
+                    width: 225px;
+                    font-weight: bold;
+                }
+
+                ul{
+                    margin: 0;
+                    padding: 0 0 0 15px;
+
+                    li {
+                        padding: 0 0 5px 0;
+                    }
+                }
+            }
+        }
+    }
+
+    div.right{
+        width:25%;
+        float:left;
+        text-align: center;
+
+        img{
+            height: 550px;
+        }
+    }
+
+    div.clear{
+        clear:both;
+    }
+}

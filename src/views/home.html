@@ -1,0 +1,162 @@
+<div class="home">
+    <h2 class="pageHeader">Home</h2>
+    <h4 class="pageDesc">List of available beers</h4>
+    <table class="beers">
+        <thead>
+            <tr class="navRow">
+                <th colspan="8" class="navCell">
+                    <div ui-view="pageNav" class="pageNav"></div>
+                </th>
+            </tr>
+            <tr class="headerRow">
+                <th class="colName">
+                    <div class="sortCol">
+                        <div class="leftDiv">
+                            <span>Name</span>
+                        </div>
+                        <div class="rightDiv">
+                            <div class="sortUp">
+                                <a href="#" ng-click="Sort(0, 0)">&#9650;</a>
+                            </div>
+                            <div class="sortDown">
+                                <a href="#" ng-click="Sort(0, 1)">&#9660;</a>
+                            </div>
+                        </div>
+                        <div class="clearDiv"></div>
+                    </div>
+                </th>
+                <th class="colTagLine">
+                    <div class="sortCol">
+                        <div class="leftDiv">
+                            <span>Tagline</span>
+                        </div>
+                        <div class="rightDiv">
+                            <div class="sortUp">
+                                <a href="#" ng-click="Sort(1, 0)">&#9650;</a>
+                            </div>
+                            <div class="sortDown">
+                                <a href="#" ng-click="Sort(1, 1)">&#9660;</a>
+                            </div>
+                        </div>
+                        <div class="clearDiv"></div>
+                    </div>
+                </th>
+                <th class="colDescription">
+                    <div class="sortCol">
+                        <div class="leftDiv">
+                            <span>Description</span>
+                        </div>
+                        <div class="rightDiv">
+                            <div class="sortUp">
+                                <a href="#" ng-click="Sort(2, 0)">&#9650;</a>
+                            </div>
+                            <div class="sortDown">
+                                <a href="#" ng-click="Sort(2, 1)">&#9660;</a>
+                            </div>
+                        </div>
+                        <div class="clearDiv"></div>
+                    </div>
+                </th>
+                <th class="colAbv">
+                    <div class="sortCol">
+                        <div class="leftDiv centerAlign">
+                            <span>Abv</span>
+                        </div>
+                        <div class="rightDiv">
+                            <div class="sortUp">
+                                <a href="#" ng-click="Sort(3, 0)">&#9650;</a>
+                            </div>
+                            <div class="sortDown">
+                                <a href="#" ng-click="Sort(3, 1)">&#9660;</a>
+                            </div>
+                        </div>
+                        <div class="clearDiv"></div>
+                    </div>
+                </th>
+                <th class="colIBU">
+                    <div class="sortCol">
+                        <div class="leftDiv centerAlign">
+                            <span>IBU</span>
+                        </div>
+                        <div class="rightDiv">
+                            <div class="sortUp">
+                                <a href="#" ng-click="Sort(4, 0)">&#9650;</a>
+                            </div>
+                            <div class="sortDown">
+                                <a href="#" ng-click="Sort(4, 1)">&#9660;</a>
+                            </div>
+                        </div>
+                        <div class="clearDiv"></div>
+                    </div>
+                </th>
+                <th class="colPh">
+                    <div class="sortCol">
+                        <div class="leftDiv centerAlign">
+                            <span>Ph Level</span>
+                        </div>
+                        <div class="rightDiv">
+                            <div class="sortUp">
+                                <a href="#" ng-click="Sort(5, 0)">&#9650;</a>
+                            </div>
+                            <div class="sortDown">
+                                <a href="#" ng-click="Sort(5, 1)">&#9660;</a>
+                            </div>
+                        </div>
+                        <div class="clearDiv"></div>
+                    </div>
+                </th>
+                <th class="colFirstBrewed">
+                    <div class="sortCol">
+                        <div class="leftDiv centerAlign">
+                            <span>First Brewed</span>
+                        </div>
+                        <div class="rightDiv">
+                            <div class="sortUp">
+                                <a href="#" ng-click="Sort(6, 0)">&#9650;</a>
+                            </div>
+                            <div class="sortDown">
+                                <a href="#" ng-click="Sort(6, 1)">&#9660;</a>
+                            </div>
+                        </div>
+                        <div class="clearDiv"></div>
+                    </div>
+                </th>
+                <th class="colBrewerTip">
+                    <div class="sortCol">
+                        <div class="leftDiv">
+                            <span>Brewer's Tips</span>
+                        </div>
+                        <div class="rightDiv">
+                            <div class="sortUp">
+                                <a href="#" ng-click="Sort(8, 0)">&#9650;</a>
+                            </div>
+                            <div class="sortDown">
+                                <a href="#" ng-click="Sort(8, 1)">&#9660;</a>
+                            </div>
+                        </div>
+                        <div class="clearDiv"></div>
+                    </div>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="beer in Beers" class="tableRow" ng-click="NavigateToDetail(beer)">
+                <td class="col colName">{{beer.name}}</td>
+                <td class="col colTagLine">{{beer.tagLine}}</td>
+                <td class="col colDescription">{{beer.description}}</td>
+                <td class="col colAbv centerAlign">{{beer.abv}}%</td>
+                <td class="col colIBU centerAlign">{{beer.ibu}}</td>
+                <td class="col colPh centerAlign">{{beer.ph}}</td>
+                <td class="col colFirstBrewed">{{beer.firstBrewed}}</td>
+                <td class="col colBrewerTip">{{beer.brewersTips}}</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr class="navRow">
+                <th colspan="8" class="navCell">
+                    <div ui-view="pageNav" class="pageNav"></div>
+                </th>
+            </tr>
+        </tfoot>
+    </table>
+</div>

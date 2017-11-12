@@ -1,0 +1,68 @@
+<div class="detail">
+    <div class="left">
+        <table class="tblDetail">
+            <tbody>
+                <tr>
+                    <td class="descriptor">Name</td>
+                    <td>{{VM.name}}</td>
+                </tr>
+                <tr>
+                    <td class="descriptor">Tagline</td>
+                    <td>{{VM.tagLine}}</td>
+                </tr>
+                <tr>
+                    <td class="descriptor">First Brewed On</td>
+                    <td>{{VM.firstBrewed}}</td>
+                </tr>
+                <tr>
+                    <td class="descriptor">Description</td>
+                    <td>{{VM.description}}</td>
+                </tr>
+                <tr>
+                    <td class="descriptor">Alcohol by volume (ABV)</td>
+                    <td>{{VM.abv}}%</td>
+                </tr>
+                <tr>
+                    <td class="descriptor">Internation bittering units (IBU)</td>
+                    <td>{{VM.ibu}}</td>
+                </tr>
+                <tr>
+                    <td class="descriptor">PH Level</td>
+                    <td>{{VM.ph}}</td>
+                </tr>
+                <tr>
+                    <td class="descriptor">Attenuation level</td>
+                    <td>{{VM.attenuationLevel}}</td>
+                </tr>
+                <tr>
+                    <td class="descriptor">Volume</td>
+                    <td>{{VM.volume.value + " " + VM.volume.unit}}</td>
+                </tr>
+                <tr>
+                    <td class="descriptor">Boil volume</td>
+                    <td>{{VM.boilVolume.value + " " + VM.boilVolume.unit}}</td>
+                </tr>
+                <tr>
+                    <td class="descriptor">Food pairing</td>
+                    <td>
+                        <ul ng-repeat="foodPairing in VM.foodPairings">
+                            <li>{{foodPairing}}</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="descriptor">Brewer's Tips</td>
+                    <td>{{VM.brewersTips}}</td>
+                </tr>
+                <tr>
+                    <td class="descriptor">Contributed By</td>
+                    <td>{{VM.contributedBy}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="right">
+        <img src="{{VM.imageUrl}}" />
+    </div>
+    <div class="clear"></div>
+</div>

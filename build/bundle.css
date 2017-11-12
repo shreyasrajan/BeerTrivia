@@ -1,0 +1,179 @@
+.header {
+  text-align: center;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  background: linear-gradient(#93acad, #739ada, #3a76d9);
+}
+.header .appTitle {
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+}
+.header .imgBeer {
+  vertical-align: top;
+}
+.content {
+  position: relative;
+  margin: 10px 50px 10px 50px;
+}
+.footer {
+  position: sticky;
+  bottom: 0;
+  width: 100%;
+  margin-top: 10px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background: linear-gradient(45deg, #e2e3e5, #cbd4e4, #b8c9e5);
+  color: #16347e;
+}
+.footer .developedBy {
+  font-size: small;
+  font-weight: bold;
+  text-align: center;
+}
+.footer .iconCredit {
+  text-align: right;
+  font-size: 12px;
+  margin-right: 10px;
+}
+.home h2.pageHeader {
+  color: teal;
+  text-decoration: underline;
+}
+.home h4.pageDesc {
+  color: brown;
+  font-style: italic;
+}
+.home table.beers {
+  width: 100%;
+  border: 2px solid #ced3dc;
+  font-size: 12px;
+  border-radius: 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.home table.beers tr.navRow {
+  height: 35px;
+}
+.home table.beers tr.headerRow {
+  background-color: #424646;
+  color: white;
+}
+.home table.beers tr.tableRow:nth-child(even) {
+  background-color: #e2e6ed;
+}
+.home table.beers tr.tableRow:hover {
+  cursor: pointer;
+  color: navy;
+}
+.home table.beers th,
+.home table.beers td {
+  text-align: left;
+  padding: 5px;
+}
+.home table.beers th.col,
+.home table.beers td.col {
+  vertical-align: top;
+}
+.home table.beers th div.sortCol {
+  width: 100%;
+}
+.home table.beers th div.sortCol .leftDiv {
+  width: 90%;
+  float: left;
+}
+.home table.beers th div.sortCol .leftDiv span {
+  vertical-align: middle;
+}
+.home table.beers th div.sortCol .rightDiv {
+  width: 10%;
+  float: left;
+}
+.home table.beers th div.sortCol .rightDiv div.sortUp,
+.home table.beers th div.sortCol .rightDiv div.sortDown {
+  width: 10px;
+}
+.home table.beers th div.sortCol .rightDiv a {
+  text-decoration: none;
+  color: white;
+}
+.home table.beers th div.sortCol .clearDiv {
+  clear: left;
+}
+.home table.beers .colName {
+  width: 125px;
+}
+.home table.beers .colTagLine {
+  width: 150px;
+}
+.home table.beers .colDescription {
+  width: 300px;
+  text-justify: inter-word;
+}
+.home table.beers .colAbv,
+.home table.beers .colIBU,
+.home table.beers .colPh {
+  width: 75px;
+}
+.home table.beers .colFirstBrewed {
+  width: 100px;
+  text-align: center;
+}
+.home table.beers .colBrewerTip {
+  width: 250px;
+}
+.home table.beers .centerAlign {
+  text-align: center;
+}
+div.pageNav {
+  text-align: right;
+}
+div.pageNav .btnPageNav {
+  background-color: #424646;
+  color: white;
+  padding: 5px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  font-size: 10px;
+  width: 50px;
+  height: 30px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+div.detail div.left {
+  width: 75%;
+  float: left;
+}
+div.detail div.left table.tblDetail {
+  width: 100%;
+  border: 2px solid #ced3dc;
+  font-size: 12px;
+  border-radius: 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background: linear-gradient(#aec0e0, #c8d1e1, #d2d2d3);
+  table-layout: fixed;
+}
+div.detail div.left table.tblDetail td {
+  padding: 10px;
+}
+div.detail div.left table.tblDetail td.descriptor {
+  width: 225px;
+  font-weight: bold;
+}
+div.detail div.left table.tblDetail td ul {
+  margin: 0;
+  padding: 0 0 0 15px;
+}
+div.detail div.left table.tblDetail td ul li {
+  padding: 0 0 5px 0;
+}
+div.detail div.right {
+  width: 25%;
+  float: left;
+  text-align: center;
+}
+div.detail div.right img {
+  height: 550px;
+}
+div.detail div.clear {
+  clear: both;
+}

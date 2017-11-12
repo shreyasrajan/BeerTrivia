@@ -1,0 +1,26 @@
+<!doctype html>
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Beer Trivia</title>
+    <script src="build/bundle.js"></script>
+    <link rel="stylesheet" type="text/css" href="build/bundle.css" />
+    <style type="text/css">
+        body {
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+
+<body ng-app="beerTrivia">
+    <div ng-include="'src/views/header.html'"></div>
+    <div class="content">
+        <div ui-view></div>
+    </div>
+    <div ng-include="'src/views/footer.html'"></div>
+</body>
+
+</html>
